@@ -10,7 +10,7 @@ with open('LICENSE') as f:
 
 setup(
     name="pdfer",
-    version="0.1.2",
+    version="0.1.3",
     author="Lorenzo Coacci",
     author_email="lorenzo@coacci.it",
     description="The package will help you parse PDFs to data.",

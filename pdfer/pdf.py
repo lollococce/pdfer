@@ -32,7 +32,6 @@ class PDF:
     ):
         # Init
         pdf_file_path = str(pdf_file_path)
-        pdf_file_path = correct_filepath(pdf_file_path, slash_remove=True)
         if filepath_exists(pdf_file_path):
             error_print(f"The file path {pdf_file_path} does not exist, please check again...")
             return None
@@ -40,7 +39,7 @@ class PDF:
         self.pdf = PyPDF2.PdfFileReader(pdf_file)
         self.num_pages = self.pdf.numPages
         self.show_debug = show_debug
-    
+
     def get_all_text(self):
         texts = [str(self.pdf.getPage(page).extractText()) for page in range(self.num_pages)]
         return ' '.join(texts)
@@ -54,3 +53,11 @@ class PDF:
         return str(self.pdf.getPage(page_num_x - 1).extractText())
 # + + + + + PDF + + + + +
 # + + + + + Classes + + + + +
+
+
+if __name__ == "__main__":
+    print(correct_filepath('gfghjkllkjh/ghjk'))
+
+    pdf = PDF('/Users/lorenzo/Desktop/test.pdf')
+
+    print(pdf.get_all_text)

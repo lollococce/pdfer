@@ -10,3 +10,6 @@ publish:
 
 push:
 	git add . && git commit -m "update" && git push origin main
+
+ship:
+	git add . && git commit -m "update" && git push origin main && rm -rf dist/* && rm -rf pdfer.egg-info/* && python3 setup.py sdist && twine upload --skip-existing dist/*
