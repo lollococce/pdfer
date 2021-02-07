@@ -32,9 +32,9 @@ class PDF:
     ):
         # Init
         pdf_file_path = str(pdf_file_path)
-        if filepath_exists(pdf_file_path):
+        if not filepath_exists(pdf_file_path):
             error_print(f"The file path {pdf_file_path} does not exist, please check again...")
-            return None
+            return
         pdf_file = open(pdf_file_path, 'rb')
         self.pdf = PyPDF2.PdfFileReader(pdf_file)
         self.num_pages = self.pdf.numPages
