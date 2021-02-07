@@ -1,0 +1,6 @@
+sphinx
+pytest
+wheel
+sphinx_rtd_theme
+golog
+PyPDF2
