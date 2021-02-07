@@ -10,8 +10,12 @@ Author: Lorenzo Coacci
 """
 # + + + + + Libraries + + + + +
 # import basic
-from golog import (
+from golog.log import (
     error_print
+)
+from golog.tools import (
+    correct_filepath,
+    filepath_exists
 )
 # to manage pdfs
 import PyPDF2
@@ -28,7 +32,7 @@ class PDF:
     ):
         # Init
         pdf_file_path = str(pdf_file_path)
-        pdf_file_path = correct_filepath(pdf_file_path)
+        pdf_file_path = correct_filepath(pdf_file_path, slash_remove=True)
         if filepath_exists(pdf_file_path):
             error_print(f"The file path {pdf_file_path} does not exist, please check again...")
             return None
