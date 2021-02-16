@@ -1,3 +1,9 @@
+#
+# Copyright (C) 2008-2021 Lorenzo Coacci
+#
+# pylint: disable=logging-format-interpolation,too-many-lines
+#
+
 # import submodules you want to install
 from .pdf import (
     PDF
@@ -18,5 +24,7 @@ pdfer - a library to parse data from a PDF
 Main Features
 -------------
 Here are just a few of the things that pdfer does well:
-  - Parse PDF
+  - Parse PDF to text
+  - OCR from PDF to images to text
+  - Handle PDF actions (copy, add page, rotate, etc)
 """

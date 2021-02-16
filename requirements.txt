@@ -4,3 +4,8 @@ wheel
 sphinx_rtd_theme
 golog
 PyPDF2
+tabula-py
+pdf2image
+pytesseract
+opencv-python
+pyocr

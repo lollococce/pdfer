@@ -1,6 +1,6 @@
 
 init:
-	pip install -r requirements.txt
+	sudo apt-get update && sudo apt-get install -y poppler-utils && echo -e 'Y' | sudo apt-get install ffmpeg libsm6 libxext6  -y && echo -e 'Y' | sudo apt install libgl1-mesa-glx && echo -e 'Y' | sudo apt-get install tesseract-ocr && pip install -r requirements.txt
 
 test:
 	py.test tests
