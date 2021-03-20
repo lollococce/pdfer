@@ -697,26 +697,3 @@ class PDF(object):
     # - - - - - OCR - - - - -
 # + + + + + PDF + + + + +
 # + + + + + Classes + + + + +
-
-# + + + + + Main + + + + +
-if __name__ == "__main__":
-    # Welcome!
-
-    # - - PDF Init - -
-    pdf_path = '/workspace/pdfer/test.pdf'
-    pdf = PDF(pdf_path)
-
-    # - - OCR - -
-    df = pdf.pdf_to_df(
-        keep_page_images=True,
-        ocr='pyocr'
-    )
-    print(df)
-
-    # try pytesseract
-    df = pdf.pdf_to_df(
-        ocr='pytesseract'
-    )
-    print(df)
-
-# + + + + + Main + + + + +
