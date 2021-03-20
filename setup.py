@@ -15,7 +15,7 @@ with open('LICENSE') as f:
 
 setup(
     name="pdfer",
-    version="0.1.6",
+    version="0.1.7",
     author="Lorenzo Coacci",
     author_email="lorenzo@coacci.it",
     description="The package will help you manage and parse PDFs to text with OCR and not.",
