@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2008-2021 Lorenzo Coacci
+# Copyright (C) 2022 Lorenzo Coacci
 #
 # pylint: disable=logging-format-interpolation,too-many-lines
 # import submodules you want to install
